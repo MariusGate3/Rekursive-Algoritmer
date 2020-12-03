@@ -1,7 +1,6 @@
 void display(int index, int[] liste){
-int v = liste[index];
-
-rect(25*index,700, 25,-50*v);
+int h = liste[index];
+rect(100*index,1000, 100,-100*h);
 
 if(index < liste.length-1){
 

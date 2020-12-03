@@ -5,7 +5,7 @@ int[] shuffleList(int[] liste, int i) {
     return liste;
   } else {
 
-    int newIndex = (int) random(i, liste.length-1);
+    int newIndex = (int) random(i, liste.length);
     int valueA =liste[newIndex];
     int valueB = liste[i];
     liste[i] = valueA;

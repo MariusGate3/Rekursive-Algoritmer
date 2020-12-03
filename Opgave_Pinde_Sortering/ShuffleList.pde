@@ -1,18 +1,23 @@
-void shuffleList(int[] liste){
-  int counter = 0;
-     int newPosition = (int) random(0,10-counter);
-
+int[] shuffleList(int[] liste) {
+  int index = 0;
   
-  if(liste[counter] == 1  ){
+  if(index >= liste.length) {
     
-   
-    liste[0] = newPosition;
+    return liste;
+    
+  } else {
+    
+      int newIndex = (int) random(index, liste.length-1);
+
+    liste[index] = liste[newIndex];
+    
+  return  shuffleList(liste);
     
     
     
-    counter++;
     
   }
-  
-  
+
+
+
 }

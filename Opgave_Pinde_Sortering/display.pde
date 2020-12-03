@@ -1,5 +1,7 @@
 void display(int position, int[] liste){
   
+  int value = liste[position];
+  
   
   
   

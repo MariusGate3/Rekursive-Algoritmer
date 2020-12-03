@@ -1,23 +1,18 @@
-int[] shuffleList(int[] liste) {
-  int index = 0;
-  
-  if(index >= liste.length) {
-    
+int[] shuffleList(int[] liste, int i) {
+  println(i);
+  if (i >= liste.length) {
+
     return liste;
-    
   } else {
-    
-      int newIndex = (int) random(index, liste.length-1);
 
-    liste[index] = liste[newIndex];
-    
-  return  shuffleList(liste);
-    
-    
-    
-    
+    int newIndex = (int) random(i, liste.length-1);
+    int valueA =liste[newIndex];
+    int valueB = liste[i];
+    liste[i] = valueA;
+    liste[newIndex] = valueB;
+
+    i++;
+
+    return  shuffleList(liste, i);
   }
-
-
-
 }
